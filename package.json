@@ -3,10 +3,10 @@
   "version": "1.1.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://Deemon13.github.io/team15-project-3dmode",
+  "homepage": "https://KseniaLF.github.io/-layout3d-mode.git",
   "scripts": {
     "dev": "parcel src/index.html",
-    "build": "parcel build src/*.html --public-url /team15-project-3dmode/"
+    "build": "parcel build src/*.html --public-url /-layout3d-mode.git/"
   },
   "repository": {
     "type": "git",
