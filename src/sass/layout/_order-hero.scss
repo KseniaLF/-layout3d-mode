@@ -1,0 +1,211 @@
+.order-hero {
+  padding-bottom: 100%;
+
+  @media screen and (min-width: 1444px) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+.main-container {
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+  }
+}
+
+.main-container__title {
+  display: flex;
+
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+  }
+
+  @media screen and (min-width: 768px) {
+    justify-content: row;
+  }
+}
+
+.order-title {
+  font-family: var(--main-font-regular);
+  color: var(--main-color-dark);
+  display: block;
+  max-width: 280px;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1.25;
+  margin-bottom: 25px;
+  display: block;
+  text-transform: uppercase;
+
+  @media screen and (min-width: 768px) {
+    font-size: 36px;
+    max-width: 648px;
+  }
+  @media screen and (min-width: 1444px) {
+    font-size: 48px;
+    max-width: 624px;
+  }
+}
+
+.order-hero-list {
+  flex-direction: row;
+  flex-wrap: nowrap;
+  border-radius: 15px;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    margin-right: 32px;
+  }
+
+  @media screen and (min-width: 1444px) {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .order-lamp {
+    width: 100%;
+    height: 170px;
+    background-image: url(../images/order/lamp_phone.jpg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .order-lamp {
+      background-image: url(../images/order/lamp_phone@2x.jpg);
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .order-lamp {
+    width: 247px;
+    height: 116px;
+    background-image: url(../images/order/lamp_tablet.jpg);
+    background-size: 247px 116px;
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .order-lamp {
+      background-image: url(../images/order/lamp_tablet@2x.jpg);
+    }
+  }
+}
+
+@media screen and (min-width: 1444px) {
+  .order-lamp {
+    width: 515px;
+    height: 315px;
+    background-image: url(../images/order/lamp_desktop.jpg);
+    background-size: 515px 315px;
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .order-lamp {
+      background-image: url(../images/order/lamp_desktop@2x.jpg);
+    }
+  }
+}
+
+.order-hero__text {
+  font-family: var(--main-font-regular);
+  color: var(--secondary-color-dark);
+
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+    max-width: 381px;
+    margin-bottom: 24px;
+  }
+  @media screen and (min-width: 1444px) {
+    max-width: 515px;
+    font-size: 18px;
+    line-height: 1.28;
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (min-width: 1444px) {
+  .order_track_desktop {
+    width: 144px;
+    height: 144px;
+    background-image: url('../images/order/track_desktop.jpg');
+    background-size: 144px 144px;
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .order_track_desktop {
+      background-image: url('../images/order/track_desktop@2x.jpg');
+    }
+  }
+}
+
+@media screen and (min-width: 1444px) {
+  .order_led_lamp_desktop {
+    width: 144px;
+    height: 144px;
+    background-image: url('../images/order/led_lamp_desktop.jpg');
+    background-size: 144px 144px;
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .order_led_lamp_desktop {
+      background-image: url('../images/order/led_lamp_desktop@2x.jpg');
+    }
+  }
+}
+
+@media screen and (min-width: 1444px) {
+  .order_lamp_mushroom {
+    width: 144px;
+    height: 144px;
+    background-image: url('../images/order/lamp_mushroom.jpg');
+    background-size: 144px 144px;
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .order_lamp_mushroom {
+      background-image: url('../images/order/lamp_mushroom@2x.jpg');
+    }
+  }
+}
+
+.order-hero__photo {
+  &-track {
+    border-radius: 0% 60% 60% 0%;
+    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.3);
+  }
+  &-led {
+    border-radius: 60% 0% 60% 0%;
+    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.3);
+  }
+  &-mushroom {
+    border-radius: 0% 0% 60% 0%;
+    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.3);
+  }
+}
+
+.order-hero__photo {
+  display: flex;
+  justify-content: space-between;
+  bottom: 0px;
+
+  @media (max-width: 1444px) {
+    display: none;
+  }
+}

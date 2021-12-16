@@ -1,0 +1,145 @@
+.footer {
+  background: #f5f5fa;
+
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.logo-footer {
+  display: flex;
+  justify-content: center;
+
+  margin-bottom: 19px;
+}
+
+.footer--dark-text {
+  font-family: var(--main-font-regular);
+  font-weight: var(--main-font-weight);
+  font-size: var(--main-text-size);
+  line-height: 1.25;
+  text-align: center;
+  letter-spacing: 0.01em;
+  color: var(--secondary-color-dark);
+  font-style: normal;
+}
+.nav-footer__link {
+  transition: color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.nav-footer__link:hover,
+.nav-footer__link:focus {
+  color: var(--accent-color);
+}
+
+.footer--blue-text {
+  font-family: var(--main-font-regular);
+  font-weight: var(--main-font-weight);
+  font-size: var(--main-text-size);
+  line-height: 1.25;
+  text-align: center;
+  color: #487996;
+  font-style: normal;
+  transition: color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.nav-footer {
+  margin-bottom: 24px;
+
+  &__item:not(:last-child) {
+    margin-bottom: 8px;
+  }
+}
+
+.seti-footer {
+  margin-bottom: 24px;
+
+  &__item:not(:last-child) {
+    margin-bottom: 8px;
+  }
+}
+.seti-footer__link {
+  transition: color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.email-footer {
+  margin-bottom: 24px;
+
+  &__text {
+    margin-bottom: 8px;
+  }
+}
+
+.tel-footer {
+  &__text {
+    margin-bottom: 8px;
+  }
+  &__item:not(:last-child) {
+    margin-bottom: 8px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    text-align: left;
+  }
+  .footer--block-flex-secondary,
+  .email-footer__text,
+  .tel-footer__text {
+    text-align: right;
+  }
+
+  .footer--block-flex-main {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .address-footer {
+    display: flex;
+  }
+
+  .nav-footer {
+    margin-right: 135px;
+    margin-bottom: 0;
+  }
+  .seti-footer {
+    margin-right: 60px;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1444px) {
+  .footer--block-flex {
+    display: flex;
+    justify-content: left;
+  }
+  .logo-footer {
+    margin-right: 136px;
+    margin-bottom: 0;
+  }
+
+  .nav-footer {
+    margin-right: 87px;
+  }
+  .seti-footer {
+    margin-right: 145px;
+  }
+
+  .footer--block-flex-secondary,
+  .email-footer__text,
+  .tel-footer__text {
+    text-align: left;
+  }
+}

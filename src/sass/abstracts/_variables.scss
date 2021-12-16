@@ -1,0 +1,22 @@
+:root {
+  --main-font-regular: 'Cera Pro', serif, sans-serif;
+  --secondary-font-regular: 'Caviar Dreams', serif, sans-serif;
+
+  --main-color-dark: #487996;
+  --main-color-light: #bdbdbd;
+  --secondary-color-dark: #2b2b2b;
+  --secondary-color-light: #ffffff;
+  --color-light-placeholder: #cdcdcd;
+  --background-color-font: #e5e5e5;
+  --background-color-dark: #f5f5fa;
+  --background-color-white: #ffffff;
+  --accent-color: #008cee;
+  --team-color: #ff6c00;
+
+  --main-font-weight: 400;
+  --main-text-size: 16px;
+  --secondary-text-size: 14px;
+
+  --main-transition-duration: 250ms;
+  --main-transition-function: cubic-bezier(0.4, 0, 0.2, 1);
+}

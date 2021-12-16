@@ -1,0 +1,117 @@
+.scanning__title {
+  margin-bottom: 31px;
+  font-size: 18px;
+  line-height: 1.28;
+  text-transform: uppercase;
+}
+
+.scanning__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 52px;
+}
+
+.scanning__item {
+  padding: 20px 17px;
+  background: var(--background-color-white);
+  opacity: 0.8;
+  box-shadow: inset 1px 1px 16px rgba(203, 203, 203, 0.8), inset -1px -1px 16px #ffffff;
+  border-radius: 50px 0px;
+  height: 183px;
+}
+
+.scanning__photo {
+  width: 94px;
+}
+
+.scanning__border {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.scanning__description {
+  text-align: center;
+  margin-top: 13px;
+  font-size: var(--secondary-text-size);
+}
+
+@media screen and (max-width: 767px) {
+  .scanning__list {
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-top: -15px;
+  }
+
+  .scanning__item {
+    flex-basis: calc((100% - 30px) / 2);
+    margin-left: 15px;
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .scanning__title {
+    margin-bottom: 39px;
+    font-size: 24px;
+    line-height: 1.25;
+  }
+
+  .scanning__list {
+    margin-left: -13px;
+    margin-top: -13px;
+    margin-bottom: 100px;
+  }
+
+  .scanning__item {
+    flex-basis: calc((100% - 52px) / 4);
+    margin-left: 13px;
+    margin-bottom: 13px;
+    padding: 22px 20px;
+  }
+
+  .scanning__photo {
+    width: 108px;
+  }
+
+  .scanning__description {
+    margin-top: 12px;
+  }
+}
+
+@media screen and (min-width: 1444px) {
+  .scanning__title {
+    font-size: 36px;
+    margin-bottom: 67px;
+  }
+
+  .scanning__list {
+    margin-left: -21px;
+    margin-top: -21px;
+    margin-bottom: 100px;
+  }
+
+  .scanning__item {
+    flex-basis: calc((100% - 84px) / 4);
+    margin-left: 21px;
+    margin-bottom: 21px;
+    padding: 36px 20px;
+    height: 298px;
+  }
+
+  .scanning__photo {
+    width: 175px;
+  }
+
+  .scanning__description {
+    font-size: 18px;
+    line-height: 1.28;
+    margin-top: 0px;
+  }
+
+  .scanning__picture {
+    margin-bottom: 27px;
+  }
+}
