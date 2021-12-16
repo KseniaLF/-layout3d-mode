@@ -1,0 +1,121 @@
+<div class="device-menu" data-menu>
+  <div class="container container--device-menu container--bg-hero">
+    <include src="./partials/pages/bg-blocks/bg-blocks__menu.html"></include>
+
+    <div class="header-menu-wrapper">
+      <a class="header__logo link" href="./index.html">
+        <picture>
+          <source
+            srcset="./images/logo/logo-main.webp 1x, ./images/logo/logo-main@2x.webp 2x"
+            type="image/webp"
+          />
+          <source srcset="./images/logo/logo-main.jpg 1x, ./images/logo/logo-main@2x.jpg 2x" />
+
+          <img class="logo-footer__img" src="./images/logo/logo-main.jpg" alt="Логотип" />
+        </picture>
+      </a>
+      <div class="header__iconwrapper header__iconwrapper--menu" data-menu-close>
+        <svg class="device-menu__icon" width="25" height="25">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </div>
+
+      <div class="header__wrapper">
+        <div class="header__iconwrapper header__iconwrapper--tel">
+          <svg class="header__icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-tel"></use>
+          </svg>
+          <div class="dropdown-menu dropdown-menu--tel">
+            <div class="dropdown-menu__pseudowrapper"></div>
+            <ul class="dropdown-menu--tel__list list">
+              <li class="dropdown-menu--tel__item">
+                <a class="dropdown-menu--tel__link link" href="tel:+380936432288"
+                  >+38 (093) 643 22 88</a
+                >
+              </li>
+              <li class="dropdown-menu--tel__item">
+                <a class="dropdown-menu--tel__link link" href="tel:+380503454423"
+                  >+38 (050) 345 44 23</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="header__langwrapper">
+          <button type="button" class="header__lang">
+            ukr
+            <ul class="dropdown-menu list">
+              <li class="dropdown-menu__item">
+                <p class="dropdown-menu__lang" lang="en">eng</p>
+              </li>
+              <li class="dropdown-menu__item">
+                <p class="dropdown-menu__lang" lang="ru">rus</p>
+              </li>
+            </ul>
+          </button>
+        </div>
+        <ul class="header__contacts list">
+          <li class="header__item">
+            <div class="header__icontel">
+              <svg width="14" height="14">
+                <use href="./images/icons.svg#icon-tel"></use>
+              </svg>
+            </div>
+
+            <a class="header__link link" href="tel:+380936432288">+38 (093) 643 22 88</a>
+          </li>
+          <li class="header__item">
+            <div class="header__iconwrapper header__icontel">
+              <svg width="14" height="14">
+                <use href="./images/icons.svg#icon-tel"></use>
+              </svg>
+            </div>
+            <a class="header__link link" href="tel:+380503454423">+38 (050) 345 44 23</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <ul class="device-menu-list list">
+      <li class="device-menu-list__item">
+        <a class="device-menu-list__link link" href="./index.html">ГОЛОВНА</a>
+      </li>
+
+      <li class="device-menu-list__item">
+        <p class="device-menu-list__text">ПОСЛУГИ</p>
+      </li>
+
+      <li class="device-menu-list__item">
+        <a
+          class="
+            device-menu-list__link
+            link
+            device-menu-list__link-current device-menu-list__link--marker
+          "
+          href="./modeling.html"
+          >3D Моделювання</a
+        >
+      </li>
+
+      <li class="device-menu-list__item">
+        <a class="device-menu-list__link link device-menu-list__link--marker" href="./scanning.html"
+          >3D Сканування</a
+        >
+      </li>
+
+      <li class="device-menu-list__item">
+        <a class="device-menu-list__link link device-menu-list__link--marker" href="./printing.html"
+          >3D Друк</a
+        >
+      </li>
+
+      <li class="device-menu-list__item">
+        <a class="device-menu-list__link link" href="./order.html">ЗАМОВИТИ</a>
+      </li>
+
+      <li class="device-menu-list__item">
+        <a class="device-menu-list__link link" href="contacts.html">КОНТАКТИ</a>
+      </li>
+    </ul>
+  </div>
+</div>

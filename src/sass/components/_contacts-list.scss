@@ -1,0 +1,127 @@
+.contacts-info__tel-title,
+.contacts-info__work-schedule-title,
+.contacts-info__email-title {
+  font-family: var(--main-font-regular);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.27;
+
+  color: var(--main-color-dark);
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+.contacts-info__email-title {
+  text-transform: none;
+}
+
+.contacts-info-list {
+  font-family: var(--main-font-regular);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  text-transform: capitalize;
+
+  color: #2b2b2b;
+}
+.contacts-inf__list-item {
+  margin-bottom: 8px;
+}
+.contacts-info__container:not(:last-child) {
+  margin-bottom: 24px;
+}
+.contacts-info__email-list {
+  text-transform: none;
+}
+
+@media screen and (min-width: 768px) {
+  .contacts-info__tel-title,
+  .contacts-info__work-schedule-title,
+  .contacts-info__email-title {
+    font-size: 24px;
+    line-height: 1.25;
+  }
+
+  .contacts-info {
+    display: flex;
+    justify-content: space-between;
+  }
+  .contacts-info__work-schedule-list {
+    text-align: right;
+  }
+  .contacts-info__email-list {
+    text-transform: none;
+  }
+}
+
+@media screen and (min-width: 1444px) {
+  .contacts-info {
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+  }
+  .contacts-info__work-schedule-list {
+    text-align: left;
+  }
+  .contacts-info__container:not(:last-child) {
+    margin-bottom: 68px;
+  }
+  .contacts-info__tel-title,
+  .contacts-info__work-schedule-title,
+  .contacts-info__email-title {
+    font-size: 36px;
+    line-height: 1.25;
+    margin-bottom: 18px;
+  }
+  .contacts-info-list {
+    font-size: 18px;
+    line-height: 1.11;
+  }
+
+  .contacts-info--order {
+    text-align: right;
+    align-items: flex-end;
+  }
+
+  .contacts-info__work-schedule-list--order {
+    text-align: right;
+  }
+
+  .contacts-info__container--order:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  .contacts-inf__list-item {
+    margin-bottom: 18px;
+  }
+
+  .contacts-inf__list-item--order {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .contacts-info__mosaic {
+    margin-top: 45px;
+    width: 438px;
+    height: 294px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-image: url('../images/order/florarium_group_desktop.jpg');
+  }
+}
+
+@media (min-device-pixel-ratio: 2) and (min-width: 1444px),
+  (min-resolution: 192dpi) and (min-width: 1444px),
+  (min-resolution: 2dppx) and (min-width: 1444px) {
+  .contacts-info__mosaic {
+    background-image: url('../images/order/florarium_group_desktop@2x.jpg');
+  }
+}
+
+@media screen and (min-width: 1444px) {
+  .contacts-info-list {
+    text-align: end;
+  }
+}

@@ -1,0 +1,111 @@
+<header class="header">
+  <div class="container container--header">
+    <a class="header__logo link" href="./index.html">
+      <picture>
+        <source
+          srcset="./images/logo/logo-main.webp 1x, ./images/logo/logo-main@2x.webp 2x"
+          type="image/webp"
+        />
+        <source srcset="./images/logo/logo-main.jpg 1x, ./images/logo/logo-main@2x.jpg 2x" />
+
+        <img class="logo-footer__img" src="./images/logo/logo-main.jpg" alt="Логотип" />
+      </picture>
+    </a>
+    <div class="header__iconwrapper header__iconwrapper--menu" data-menu-open>
+      <svg class="header__icon" width="32" height="32">
+        <use href="./images/icons.svg#icon-burger"></use>
+      </svg>
+    </div>
+    <nav class="header__navigation">
+      <ul class="header__menu list">
+        <li class="header__menuitem">
+          <a class="header__menulink link" href="./index.html">Головна</a>
+        </li>
+        <li class="header__menuitem header__menuitem--services">
+          <a class="header__menulink header--link-current link" href="#">Послуги</a>
+          <div class="header__iconwrapper header__iconwrapper--arrow arrow-down">
+            <svg class="header__arrow" width="10" height="14">
+              <use href="./images/icons.svg#icon-down-arrow"></use>
+            </svg>
+          </div>
+          <div class="header__iconwrapper header__iconwrapper--arrow arrow-up">
+            <svg class="header__arrow" width="10" height="14">
+              <use href="./images/icons.svg#icon-up-arrow"></use>
+            </svg>
+          </div>
+          <ul class="submenu list">
+            <li class="submenu__item">
+              <a class="submenu__link link" href="./modeling.html">3D Моделювання</a>
+            </li>
+            <li class="submenu__item">
+              <a class="submenu__link link" href="./scanning.html">3D Сканування</a>
+            </li>
+            <li class="submenu__item">
+              <a class="submenu__link header--link-current link" href="./printing.html">3D Друк</a>
+            </li>
+          </ul>
+        </li>
+        <li class="header__menuitem">
+          <a class="header__menulink link" href="./order.html">Замовити</a>
+        </li>
+        <li class="header__menuitem">
+          <a class="header__menulink link" href="./contacts.html">Контакти</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="header__wrapper">
+      <div class="header__iconwrapper header__iconwrapper--tel">
+        <svg class="header__icon" width="24" height="24">
+          <use href="./images/icons.svg#icon-tel"></use>
+        </svg>
+        <div class="dropdown-menu dropdown-menu--tel">
+          <div class="dropdown-menu__pseudowrapper"></div>
+          <ul class="dropdown-menu--tel__list list">
+            <li class="dropdown-menu--tel__item">
+              <a class="dropdown-menu--tel__link link" href="tel:+380936432288"
+                >+38 (093) 643 22 88</a
+              >
+            </li>
+            <li class="dropdown-menu--tel__item">
+              <a class="dropdown-menu--tel__link link" href="tel:+380503454423"
+                >+38 (050) 345 44 23</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="header__langwrapper">
+        <button type="button" class="header__lang">
+          ukr
+          <ul class="dropdown-menu list">
+            <li class="dropdown-menu__item">
+              <p class="dropdown-menu__lang" lang="en">eng</p>
+            </li>
+            <li class="dropdown-menu__item">
+              <p class="dropdown-menu__lang" lang="ru">rus</p>
+            </li>
+          </ul>
+        </button>
+      </div>
+      <ul class="header__contacts list">
+        <li class="header__item">
+          <div class="header__icontel">
+            <svg width="14" height="14">
+              <use href="./images/icons.svg#icon-tel"></use>
+            </svg>
+          </div>
+
+          <a class="header__link link" href="tel:+380936432288">+38 (093) 643 22 88</a>
+        </li>
+        <li class="header__item">
+          <div class="header__iconwrapper header__icontel">
+            <svg width="14" height="14">
+              <use href="./images/icons.svg#icon-tel"></use>
+            </svg>
+          </div>
+          <a class="header__link link" href="tel:+380503454423">+38 (050) 345 44 23</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>

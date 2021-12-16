@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/png" href="./images/logo/favicon.png" />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+
+    <title>3D Mode</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <include src="./partials/header-main.html"></include>
+    <!-- END HEADER -->
+
+    <!-- DEVICE-MENU -->
+    <include src="./partials/device-menu-main.html"></include>
+    <!-- END DEVICE-MENU -->
+
+    <main>
+      <!-- HERO -->
+      <include src="./partials/pages/main/hero.html"></include>
+      <!-- END HERO -->
+
+      <!-- GALLERY -->
+      <include src="./partials/pages/main/gallery.html"></include>
+      <!-- END GALLERY -->
+
+      <!-- PHOTOS -->
+      <include src="./partials/pages/main/photos.html"></include>
+      <include src="./partials/pages/main/modal-backdrop.html"></include>
+
+      <!-- END PHOTOS -->
+    </main>
+
+    <!-- FOOTER -->
+    <include src="./partials/footer.html"></include>
+    <!-- END FOOTER -->
+
+    <!-- SCRIPTS -->
+    <script src="./index.js"></script>
+    <script src="./menu.js"></script>
+    <script src="./modal.js" type="module"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script>
+      $('.slider-mary').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      });
+    </script>
+    <script>
+      var $page = $('html, body');
+      $('a[href*="#"]').click(function () {
+        $page.animate(
+          {
+            scrollTop: $($.attr(this, 'href')).offset().top,
+          },
+          400,
+        );
+        return false;
+      });
+    </script>
+    <script src="./team.js"></script>
+  </body>
+</html>

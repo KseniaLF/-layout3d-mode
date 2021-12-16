@@ -1,0 +1,23 @@
+body {
+  font-family: var(--main-font-regular);
+  font-weight: var(--main-font-weight);
+  font-size: var(--main-text-size);
+  color: var(--main-color-dark);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  font-size: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
